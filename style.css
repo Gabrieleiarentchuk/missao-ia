@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+:root{
+    --fonte-titulo:'Roboto Condensed';
+    --fonte-texto: 'Crimson text';
+    --cor-principal: #ffffff;
+    --cor-secundaria: #ffffff;
+    --cor-destaque: #ffffff;
+    --cor-texto: #ffffff;
+}
+body{
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
