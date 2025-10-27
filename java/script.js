@@ -48,4 +48,31 @@ function mostraAlternativas(){
 }
 function respostaSelecionada(opcaoSelecionada){
     const afirmacoes = aleatorio(opcaoSelecionada.Afirmacoes);
+    historiaFinal += afirmacoes + "";
+    if(opcaoSelecionada.proxima !== undefined){
+        atual = opcaoSelecionada.proxima;
+    }else{
+        mostraResultado();
+        return;
+    }
+    mostraPergunta();
 }
+function mostraResultado(){
+    caixaPerguntas.textContent = 'Em 2025, ${none}';
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+    caixaResultados.classList.add("mostrar");
+    botaoJogarNovamente.addEventListener("click", JogaNovamente);
+}
+function JogaNovamente(){
+    atual = 0;
+    historiaFinal = "";
+    caixaResultados.classList.remove("mostrar");
+    mostraPergunta();
+}
+function substituiNome(){
+    for (const pergunta of perguntas){
+        pergunta.enunciado = pergunta.enunciado.replace(/você/g, nome);
+    }
+}
+substituiNome();

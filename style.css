@@ -3,9 +3,9 @@
 :root{
     --fonte-titulo:'Roboto Condensed';
     --fonte-texto: 'Crimson text';
-    --cor-principal: #332f2f;
-    --cor-secundaria: #706b6b;
-    --cor-destaque: #ffffff;
+    --cor-principal: #7d7676;
+    --cor-secundaria: #b6b0b0;
+    --cor-destaque: #080202;
     --cor-texto: #070606;
 }
 body{
