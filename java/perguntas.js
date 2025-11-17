@@ -1,11 +1,11 @@
 export const perguntas = [
     {
-    enunciado:"",
+    enunciado:"O aquecimento global exige uma ação urgente para evitar catástrofes irreversíveis. O dilema central reside em conciliar a necessidade de cortes rápidos de carbono com os custos econômicos imediatos.",
     alternativas:[
         {
-            texto: "Qual estratégia deve receber a maior parte dos investimentos imediatos — a Mitigação (cortar as emissões de gases-estufa) ou a Adaptação (construir resiliência contra inundações, secas e calor)?",
+            texto: "Qual estratégia é a mais responsável e viável: um choque econômico rápido para salvar o clima ou uma transição lenta que prioriza a economia, mas arrisca o futuro?",
             afirmacao:[
-                "Priorizar a Mitigação das emissões."
+                "Proibir rapidamente os combustíveis fósseis e subsidiando massivamente as energias renováveis e a tecnologia limpa."
             ],
             proxima: 1,
         },
@@ -45,14 +45,14 @@ export const perguntas = [
             afirmacao:[
 
             ],
-            proxima:3,
+            proxima: 5,
         },
         {
             texto:
             afirmacao: [
 
             ],
-            proxima: 4,
+            proxima: 6,
         }
     ]
 },
@@ -64,14 +64,14 @@ export const perguntas = [
             afirmacao:[
 
             ],
-            proxima:3,
+            proxima: 7,
         },
         {
             texto:
             afirmacao: [
 
             ],
-            proxima: 4,
+            proxima: 8,
         }
     ]
 },
@@ -83,14 +83,14 @@ export const perguntas = [
             afirmacao:[
 
             ],
-            proxima:3,
+            proxima:9,
         },
         {
             texto:
             afirmacao: [
 
             ],
-            proxima: 4,
+            proxima: 10,
         }
     ]
 },
