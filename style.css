@@ -3,10 +3,10 @@
 :root{
     --fonte-titulo:'Roboto Condensed';
     --fonte-texto: 'Crimson text';
-    --cor-principal: #6b9c6f;
-    --cor-secundaria: #9edaa4;
-    --cor-destaque: #080202;
-    --cor-texto: #070606;
+    --cor-principal: #57945c;
+    --cor-secundaria: #8eda96;
+    --cor-destaque: #e3f5e6;
+    --cor-texto: #faf7f7;
 }
 body{
     background-color: var(--cor-principal);
