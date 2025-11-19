@@ -15,7 +15,7 @@ export const perguntas = [
                  "O aumento da temperatura global intensifica e torna mais comuns as ondas de calor."
              ],
             proxima: 2,
-        }
+        },
     ]
 },
 {
@@ -34,7 +34,7 @@ export const perguntas = [
                   "Ignorar o problema impede a redução dos danos ambientais."
             ],
             proxima: 4,
-        }
+        },
     ]
 },
 {
@@ -53,7 +53,7 @@ export const perguntas = [
                 "As emissões desses combustíveis são uma das principais causas do aquecimento global."
             ],
             proxima: 6,
-        }
+        },
     ]
 },
 {
@@ -72,7 +72,7 @@ export const perguntas = [
                  "A ação humana intensifica o aquecimento global, acelerando o derretimento das geleiras."
             ],
             proxima: 8,
-        }
+        },
     ]
 },
 {
@@ -91,7 +91,7 @@ export const perguntas = [
                  "A remoção de florestas aumenta a emissão de CO₂ e agrava as mudanças climáticas."
             ],
             proxima: 10,
-        }
+        },
     ]
 },
 ]
