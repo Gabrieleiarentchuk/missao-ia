@@ -40,7 +40,7 @@ function mostraAlternativas(){
     for (const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
-        botaoAlternativas.addEventListener("click", () => respondeSelecionada(alternativa));
+        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
         caixaAlternativas.appendChild(botaoAlternativas);
     }
     function mostraAfirmacoes(){
@@ -62,7 +62,7 @@ function respondeSelecionada(opcaoSelecionada){
 }
 function mostraResultado(){
     caixaPerguntas.textContent = 'Em 2050, ${nome}';
-    textoResultado.textContent = historiaFinal;
+    textoResultados.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
     caixaResultados.classList.add("mostrar");
     botaoJogarNovamente.addEventListener("click",JogaNovamente)
