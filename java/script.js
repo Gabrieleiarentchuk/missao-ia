@@ -1,4 +1,4 @@
-import { aleatorio, none } from './aleatorio.js';
+import { aleatorio, nome } from './aleatorio.js';
 import { perguntas } from './perguntas.js';
 
 const caixaPrincipal = document.querySelector(".caixa-principal");
@@ -14,7 +14,7 @@ let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
 
-botaoIniciar.addEventlistener('click',iniciaJogo);
+botaoIniciar.addEventListener('click',iniciaJogo);
 function iniciaJogo() {
     atual = 0;
     historiaFinal = "";
@@ -27,8 +27,8 @@ function iniciaJogo() {
 
 function mostraPergunta (){
     if (atual >= perguntas.length){
-        mostraResultado();
-    return;
+        mostraResultados();
+        return;
     }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
@@ -43,7 +43,7 @@ function mostraAlternativas(){
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
         caixaAlternativas.appendChild(botaoAlternativas);
     }
-    function mostraAfirmacoes(){
+    function mostraAfirmacoes (){
         for(const afirmacoes of perguntaAtual.afirmacoes){
 
         }
@@ -52,7 +52,7 @@ function mostraAlternativas(){
 function respondeSelecionada(opcaoSelecionada){
     const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
     historiaFinal += afirmacoes + "";
-    if(opcaoSelecionada.proxima !== undefined){
+    if (opcaoSelecionada.proxima !== undefined){
         atual = opcaoSelecionada.proxima;
     }else{
         mostraResultado();
@@ -65,9 +65,9 @@ function mostraResultado(){
     textoResultados.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
     caixaResultados.classList.add("mostrar");
-    botaoJogarNovamente.addEventListener("click",JogaNovamente)
+    botaoJogarNovamente.addEventListener("click",jogaNovamente)
 }
-function JogaNovamente(){
+function jogaNovamente(){
     atual = 0;
     historiaFinal = "";
     caixaResultados.classList.remove("mostrar");

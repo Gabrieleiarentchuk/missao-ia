@@ -1,7 +1,7 @@
 export const perguntas = [
     {
-    enunciado:"Ondas de calor estão se tornando mais frequentes no mundo. Avalie as alternativas:",
-    alternativas:[
+     enunciado:"Ondas de calor estão se tornando mais frequentes no mundo. Avalie as alternativas:",
+     alternativas:[
         {
             texto: "Reduzir o desperdício de energia contribui para diminuir as emissões que intensificam o aquecimento global.",
             afirmacao:[
@@ -19,8 +19,8 @@ export const perguntas = [
     ]
 },
 {
-    enunciado:"O aquecimento global tem causado eventos climáticos mais intensos. Avalie as alternativas:",
-    alternativas:[
+     enunciado:"O aquecimento global tem causado eventos climáticos mais intensos. Avalie as alternativas:",
+     alternativas:[
         {
             texto:"Ações sustentáveis podem ajudar a reduzir os impactos das mudanças climáticas.",
             afirmacao:[
